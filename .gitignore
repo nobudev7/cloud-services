@@ -207,3 +207,8 @@ marimo/_lsp/
 __marimo__/
 .idea
 .DS_Store
+
+# Terraform
+.terraform
+.terraform*
+terraform.tfstate.d/
