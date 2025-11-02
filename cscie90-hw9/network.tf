@@ -13,7 +13,7 @@ data "aws_availability_zones" "azs" {
 }
 
 #Create public subnet 
-resource "aws_subnet" "subnet" {
+resource "aws_subnet" "public_subnet" {
   availability_zone = element(data.aws_availability_zones.azs.names, 0)
   vpc_id            = aws_vpc.vpc_master.id
   cidr_block        = "10.0.1.0/24"
